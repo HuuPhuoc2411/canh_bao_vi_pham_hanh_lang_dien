@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canhbaoantoanluoidien</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+   
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body style="background-color: rgb(8, 2, 42);">
+ <h1 style="color: rgb(255, 255, 255);text-align: center;">HỆ THỐNG GIÁM SÁT HÀNH LANG AN TOÀN</h1>
+  </br>
+    <div class="cards">
+      <div class="card">
+        <img
+         name="anh1" 
+          src="/canhbao.jpg"
+          alt=""
+          class="card-image"
+        />
+        <div class="card-content">
+          <div class="card-top">
+            <h2 class="card-title">Trạm giám sát số: 01 </h2>
+            <p style="color: rgb(235, 251, 4);text-align: center;">bình thường</p>
+            <p style="color: aliceblue;text-align: center;">Thời gian: 10:32:44</p>
+            <center>
+            <img name="thoitiet2" src="/nang.png" alt="bình thường" width="30%" style="border-radius: 10px;">
+            <p id="noidung" style="font-size: 15PX; font-weight:bold; color: white;"> thời tiết</p>
+            </center>
+            <div  style="overflow:hidden;text-align: center">
+              <div style=" margin-left: 30px;margin-right: auto;padding: 10px;float: left;  box-sizing: border-box;"> 
+                  <p style="font-size: 20PX; font-weight:bold; color: white;">Laser</p>
+                  <button class="nut2" id="laseron">ĐANG BẬT</button>
+                  <!-- <button class="nut2" id="laseroff"> OFF</button> -->
+              </div>
+              <div style=" margin-left: auto;margin-right: 1px; padding: 10px;"> 
+                  <p style="font-size: 20PX; font-weight:bold; color: white;">Loa</p>
+                  <button class="nut1" id="loaon">ĐANG BẬT</button>
+                  <!-- <button class="nut1" id="loaoff"> OFF</button> -->
+              </div>
+          </div>
+      
+          </div>
+          <div class="card-bottom">
+            <button class="card-live" >
+              <div >
+                  <div id="vtTemp" style="font-size: 0px;  color: white;" >
+  
+                  </div>
+           <a href="https://www.google.com/maps/place/Tr%E1%BA%A1m+s%E1%BB%91+01/@10.0992823,105.716994,19.44z/data=!4m12!1m6!3m5!1s0x31a087a278a86855:0xdc03a97e404a6adf!2zVHLhuqFtIHPhu5EgMDE!8m2!3d10.0993355!4d105.7169119!3m4!1s0x31a087a278a86855:0xdc03a97e404a6adf!8m2!3d10.0993355!4d105.7169119?hl=vi" style="font-size: 20PX; color: white;text-decoration: none;">Vị trí</a>
+          </button>
+      
+  
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img
+         name="anh2" 
+         src="/canhbao.jpg"
+          alt=""
+          class="card-image"
+        />
+        <div class="card-content">
+          <div class="card-top">
+            <h2 class="card-title">Trạm giám sát số: 02</h2>
+            <p style="color: rgb(211, 253, 4);text-align: center;">Phát hiện vi phạm</p>
+            <p style="color: aliceblue;text-align: center;">Thời gian: 15:32:44</p>
+            <center>
+            <img name="thoitiet2" src="/mua.png" alt="bình thường" width="30%" style="border-radius: 10px;">
+            <p id="noidung" style="font-size: 15PX; font-weight:bold; color: white;"> thời tiết đang mưa</p>
+            </center>
+            <div  style="overflow:hidden;text-align: center">
+              <div style=" margin-left: 30px;margin-right: auto;padding: 10px;float: left;  box-sizing: border-box;"> 
+                  <p style="font-size: 20PX; font-weight:bold; color: white;">Laser</p>
+                  <button class="nut2" id="laseron">ĐANG BẬT</button>
+                  <!-- <button class="nut2" id="laseroff"> OFF</button> -->
+              </div>
+              <div style=" margin-left: auto;margin-right: 1px; padding: 10px;"> 
+                  <p style="font-size: 20PX; font-weight:bold; color: white;">Loa</p>
+                  <button class="nut1" id="loaon">ĐANG TẮT</button>
+                  <!-- <button class="nut1" id="loaoff"> OFF</button> -->
+              </div>
+          </div>
+      
+          </div>
+          <div class="card-bottom">
+            <button class="card-live" >
+              <div >
+                  <div id="vtTemp" style="font-size: 0px;  color: white;" >
+  
+                  </div>
+           <a href="https://www.google.com/maps/place/Tr%E1%BA%A1m+s%E1%BB%91+01/@10.0992823,105.716994,19.44z/data=!4m12!1m6!3m5!1s0x31a087a278a86855:0xdc03a97e404a6adf!2zVHLhuqFtIHPhu5EgMDE!8m2!3d10.0993355!4d105.7169119!3m4!1s0x31a087a278a86855:0xdc03a97e404a6adf!8m2!3d10.0993355!4d105.7169119?hl=vi" style="font-size: 20PX; color: white;text-decoration: none;">Vị trí</a>
+          </button>
+      
+  
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img
+         name="anh3" 
+          src="/binhthuongmoi.jpg"
+          alt=""
+          class="card-image"
+        />
+        <div class="card-content">
+          <div class="card-top">
+            <h2 class="card-title">Trạm giám sát số: 03</h2>
+            <p style="color: aliceblue;text-align: center;">Bình thường</p>
+            <center>
+            <img name="thoitiet2" src="/nangit.png" alt="bình thường" width="30%" style="border-radius: 10px;">
+            <p id="noidung" style="font-size: 15PX; font-weight:bold; color: white;"> thời tiết nắng ít</p>
+            </center>
+            <div  style="overflow:hidden;text-align: center">
+              <div style=" margin-left: 30px;margin-right: auto;padding: 10px;float: left;  box-sizing: border-box;"> 
+                  <p style="font-size: 20PX; font-weight:bold; color: white;">Laser</p>
+                  <button class="nut2" id="laseron">ĐANG BẬT</button>
+                  <!-- <button class="nut2" id="laseroff"> OFF</button> -->
+              </div>
+              <div style=" margin-left: auto;margin-right: 1px; padding: 10px;"> 
+                  <p style="font-size: 20PX; font-weight:bold; color: white;">Loa</p>
+                  <button class="nut1" id="loaon">ĐANG TẮT</button>
+                  <!-- <button class="nut1" id="loaoff"> OFF</button> -->
+              </div>
+          </div>
+      
+          </div>
+          <div class="card-bottom">
+            <button class="card-live" >
+              <div >
+                  <div id="vtTemp" style="font-size: 0px;  color: white;" >
+  
+                  </div>
+           <a href="https://www.google.com/maps/place/Tr%E1%BA%A1m+s%E1%BB%91+01/@10.0992823,105.716994,19.44z/data=!4m12!1m6!3m5!1s0x31a087a278a86855:0xdc03a97e404a6adf!2zVHLhuqFtIHPhu5EgMDE!8m2!3d10.0993355!4d105.7169119!3m4!1s0x31a087a278a86855:0xdc03a97e404a6adf!8m2!3d10.0993355!4d105.7169119?hl=vi" style="font-size: 20PX; color: white;text-decoration: none;">Vị trí</a>
+          </button>
+      
+  
+          </div>
+        </div>
+      </div>
+     
+      <div class="card">
+        <img
+         name="anh4" 
+          src="/canhbao.jpg"
+          alt=""
+          class="card-image"
+        />
+        <div class="card-content">
+          <div class="card-top">
+            <h2 class="card-title">Trạm giám sát số: 04</h2>
+            <p style="color: rgb(235, 251, 4);text-align: center;">Phát hiện vi phạm</p>
+            <p style="color: aliceblue;text-align: center;">Thời gian: 10:32:44</p>
+            <center>
+            <img name="thoitiet2" src="/nang.png" alt="bình thường" width="30%" style="border-radius: 10px;">
+            <p id="noidung" style="font-size: 15PX; font-weight:bold; color: white;"> thời tiết nắng</p>
+            </center>
+            <div  style="overflow:hidden;text-align: center">
+              <div style=" margin-left: 30px;margin-right: auto;padding: 10px;float: left;  box-sizing: border-box;"> 
+                  <p style="font-size: 20PX; font-weight:bold; color: white;">Laser</p>
+                  <button class="nut2" id="laseron">ĐANG BẬT</button>
+                  <!-- <button class="nut2" id="laseroff"> OFF</button> -->
+              </div>
+              <div style=" margin-left: auto;margin-right: 1px; padding: 10px;"> 
+                  <p style="font-size: 20PX; font-weight:bold; color: white;">Loa</p>
+                  <button class="nut1" id="loaon">ĐANG BẬT</button>
+                  <!-- <button class="nut1" id="loaoff"> OFF</button> -->
+              </div>
+          </div>
+      
+          </div>
+          <div class="card-bottom">
+            <button class="card-live" >
+              <div >
+                  <div id="vtTemp" style="font-size: 0px;  color: white;" >
+  
+                  </div>
+           <a href="https://www.google.com/maps/place/Tr%E1%BA%A1m+s%E1%BB%91+01/@10.0992823,105.716994,19.44z/data=!4m12!1m6!3m5!1s0x31a087a278a86855:0xdc03a97e404a6adf!2zVHLhuqFtIHPhu5EgMDE!8m2!3d10.0993355!4d105.7169119!3m4!1s0x31a087a278a86855:0xdc03a97e404a6adf!8m2!3d10.0993355!4d105.7169119?hl=vi" style="font-size: 20PX; color: white;text-decoration: none;">Vị trí</a>
+          </button>
+      
+  
+          </div>
+        </div>
+      </div>
+     
+     
+      </div>
+
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+      <div class="cards">
+        <div class="card">
+          <img
+           name="anh1" 
+           src="/canhbao.jpg"
+            alt=""
+            class="card-image"
+          />
+          <div class="card-content">
+            <div class="card-top">
+              <h2 class="card-title">Trạm giám sát số: 05</h2>
+              <p style="color: rgb(218, 237, 5);text-align: center;">Vi phạm</p>
+              <p style="color: aliceblue;text-align: center;">Thời gian: 15:32:44</p>
+              <center>
+              <img name="thoitiet2" src="/nang.png" alt="bình thường" width="30%" style="border-radius: 10px;">
+              <p id="noidung" style="font-size: 15PX; font-weight:bold; color: white;"> thời tiết nắng</p>
+              </center>
+              <div  style="overflow:hidden;text-align: center">
+                <div style=" margin-left: 30px;margin-right: auto;padding: 10px;float: left;  box-sizing: border-box;"> 
+                    <p style="font-size: 20PX; font-weight:bold; color: white;">Laser</p>
+                    <button class="nut2" id="laseron">ĐANG BẬT</button>
+                    <!-- <button class="nut2" id="laseroff"> OFF</button> -->
+                </div>
+                <div style=" margin-left: auto;margin-right: 1px; padding: 10px;"> 
+                    <p style="font-size: 20PX; font-weight:bold; color: white;">Loa</p>
+                    <button class="nut1" id="loaon">ĐANG TẮT</button>
+                    <!-- <button class="nut1" id="loaoff"> OFF</button> -->
+                </div>
+            </div>
+        
+            </div>
+            <div class="card-bottom">
+              <button class="card-live" >
+                <div >
+                    <div id="vtTemp" style="font-size: 0px;  color: white;" >
+    
+                    </div>
+             <a href="https://www.google.com/maps/place/Tr%E1%BA%A1m+s%E1%BB%91+01/@10.0992823,105.716994,19.44z/data=!4m12!1m6!3m5!1s0x31a087a278a86855:0xdc03a97e404a6adf!2zVHLhuqFtIHPhu5EgMDE!8m2!3d10.0993355!4d105.7169119!3m4!1s0x31a087a278a86855:0xdc03a97e404a6adf!8m2!3d10.0993355!4d105.7169119?hl=vi" style="font-size: 20PX; color: white;text-decoration: none;">Vị trí</a>
+            </button>
+        
+    
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img
+           name="anh2" 
+           src="/canhbao.jpg"
+            alt=""
+            class="card-image"
+          />
+          <div class="card-content">
+            <div class="card-top">
+              <h2 class="card-title">Trạm giám sát số: 06</h2>
+              <p style="color: rgb(252, 227, 8);text-align: center;">Vi phạm</p>
+              <p style="color: aliceblue;text-align: center;">Thời gian: 15:32:44</p>
+              <center>
+              <img name="thoitiet2" src="/nang.png" alt="bình thường" width="30%" style="border-radius: 10px;">
+              <p id="noidung" style="font-size: 15PX; font-weight:bold; color: white;"> thời tiết nắng</p>
+              </center>
+              <div  style="overflow:hidden;text-align: center">
+                <div style=" margin-left: 30px;margin-right: auto;padding: 10px;float: left;  box-sizing: border-box;"> 
+                    <p style="font-size: 20PX; font-weight:bold; color: white;">Laser</p>
+                    <button class="nut2" id="laseron">ĐANG BẬT</button>
+                    <!-- <button class="nut2" id="laseroff"> OFF</button> -->
+                </div>
+                <div style=" margin-left: auto;margin-right: 1px; padding: 10px;"> 
+                    <p style="font-size: 20PX; font-weight:bold; color: white;">Loa</p>
+                    <button class="nut1" id="loaon">ĐANG TẮT</button>
+                    <!-- <button class="nut1" id="loaoff"> OFF</button> -->
+                </div>
+            </div>
+        
+            </div>
+            <div class="card-bottom">
+              <button class="card-live" >
+                <div >
+                    <div id="vtTemp" style="font-size: 0px;  color: white;" >
+    
+                    </div>
+             <a href="https://www.google.com/maps/place/Tr%E1%BA%A1m+s%E1%BB%91+01/@10.0992823,105.716994,19.44z/data=!4m12!1m6!3m5!1s0x31a087a278a86855:0xdc03a97e404a6adf!2zVHLhuqFtIHPhu5EgMDE!8m2!3d10.0993355!4d105.7169119!3m4!1s0x31a087a278a86855:0xdc03a97e404a6adf!8m2!3d10.0993355!4d105.7169119?hl=vi" style="font-size: 20PX; color: white;text-decoration: none;">Vị trí</a>
+            </button>
+        
+    
+            </div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img
+           name="anh3" 
+            src="/binhthuongmoi.jpg"
+            alt=""
+            class="card-image"
+          />
+          <div class="card-content">
+            <div class="card-top">
+              <h2 class="card-title">Trạm giám sát số: 07</h2>
+              <p style="color: aliceblue;text-align: center;">Bình thường</p>
+              <center>
+              <img name="thoitiet2" src="/nang.png" alt="bình thường" width="30%" style="border-radius: 10px;">
+              <p id="noidung" style="font-size: 15PX; font-weight:bold; color: white;"> thời tiết nắng</p>
+              </center>
+              <div  style="overflow:hidden;text-align: center">
+                <div style=" margin-left: 30px;margin-right: auto;padding: 10px;float: left;  box-sizing: border-box;"> 
+                    <p style="font-size: 20PX; font-weight:bold; color: white;">Laser</p>
+                    <button class="nut2" id="laseron">ĐANG BẬT</button>
+                    <!-- <button class="nut2" id="laseroff"> OFF</button> -->
+                </div>
+                <div style=" margin-left: auto;margin-right: 1px; padding: 10px;"> 
+                    <p style="font-size: 20PX; font-weight:bold; color: white;">Loa</p>
+                    <button class="nut1" id="loaon">ĐANG TẮT</button>
+                    <!-- <button class="nut1" id="loaoff"> OFF</button> -->
+                </div>
+            </div>
+        
+            </div>
+            <div class="card-bottom">
+              <button class="card-live" >
+                <div >
+                    <div id="vtTemp" style="font-size: 0px;  color: white;" >
+    
+                    </div>
+             <a href="https://www.google.com/maps/place/Tr%E1%BA%A1m+s%E1%BB%91+01/@10.0992823,105.716994,19.44z/data=!4m12!1m6!3m5!1s0x31a087a278a86855:0xdc03a97e404a6adf!2zVHLhuqFtIHPhu5EgMDE!8m2!3d10.0993355!4d105.7169119!3m4!1s0x31a087a278a86855:0xdc03a97e404a6adf!8m2!3d10.0993355!4d105.7169119?hl=vi" style="font-size: 20PX; color: white;text-decoration: none;">Vị trí</a>
+            </button>
+        
+    
+            </div>
+          </div>
+        </div>
+       
+        <div class="card">
+          <img
+           name="anh4" 
+            src="/binhthuongmoi.jpg"
+            alt=""
+            class="card-image"
+          />
+          <div class="card-content">
+            <div class="card-top">
+              <h2 class="card-title">Trạm giám sát số: 08</h2>
+              <p style="color: aliceblue;text-align: center;">Bình thường</p>
+              <center>
+              <img name="thoitiet2" src="/nang.png" alt="bình thường" width="30%" style="border-radius: 10px;">
+              <p id="noidung" style="font-size: 15PX; font-weight:bold; color: white;"> thời tiết nắng</p>
+              </center>
+              <div  style="overflow:hidden;text-align: center">
+                <div style=" margin-left: 30px;margin-right: auto;padding: 10px;float: left;  box-sizing: border-box;"> 
+                    <p style="font-size: 20PX; font-weight:bold; color: white;">Laser</p>
+                    <button class="nut2" id="laseron">ĐANG BẬT</button>
+                    <!-- <button class="nut2" id="laseroff"> OFF</button> -->
+                </div>
+                <div style=" margin-left: auto;margin-right: 1px; padding: 10px;"> 
+                    <p style="font-size: 20PX; font-weight:bold; color: white;">Loa</p>
+                    <button class="nut1" id="loaon">ĐANG TẮT</button>
+                    <!-- <button class="nut1" id="loaoff"> OFF</button> -->
+                </div>
+            </div>
+        
+            </div>
+            <div class="card-bottom">
+              <button class="card-live" >
+                <div >
+                    <div id="vtTemp" style="font-size: 0px;  color: white;" >
+    
+                    </div>
+             <a href="https://www.google.com/maps/place/Tr%E1%BA%A1m+s%E1%BB%91+01/@10.0992823,105.716994,19.44z/data=!4m12!1m6!3m5!1s0x31a087a278a86855:0xdc03a97e404a6adf!2zVHLhuqFtIHPhu5EgMDE!8m2!3d10.0993355!4d105.7169119!3m4!1s0x31a087a278a86855:0xdc03a97e404a6adf!8m2!3d10.0993355!4d105.7169119?hl=vi" style="font-size: 20PX; color: white;text-decoration: none;">Vị trí</a>
+            </button>
+        
+    
+            </div>
+          </div>
+        </div>
+       
+       
+        </div>
+       
+     
+   
+    <span id="data"></span>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+
+<script type="module">
+   
+    const firebaseConfig = {
+      apiKey: "AIzaSyBdBC8xhjoP4gAJt9fVskQr8XuGLWT1U40",
+      authDomain: "canh-bao-luoi-dien.firebaseapp.com",
+      databaseURL: "https://canh-bao-luoi-dien-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "canh-bao-luoi-dien",
+      storageBucket: "canh-bao-luoi-dien.appspot.com",
+      messagingSenderId: "669370337493",
+      appId: "1:669370337493:web:d6928ca16453b31b637a5c",
+      measurementId: "G-GJR7RYZCK6"
+    };
+  
+  
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    var data = document.getElementById('data');
+    var dbRef = firebase.database().ref().child('data');
+    
+    dbRef.on('value', snap =>{
+    if(snap.val()==0){
+      document.images['anh1'].src ='./LASERBT.png'
+             
+            
+       
+
+             
+         }
+         if(snap.val()==1){
+          
+          document.images['anh1'].src ='/binhthuongmoi.jpg' ;
+        
+         
+    
+      }
+    });
+   var valueTemp = firebase.database().ref().child('thoitiet');
+   valueTemp.on('value',snap =>{
+    console.log("thoi tiet: "+snap.val());
+    document.getElementById("vtTemp").innerHTML = snap.val();
+    if(snap.val()<20){
+             
+             document.images['thoitiet2'].src ='./toi.png' ;
+             document.getElementById("noidung").innerHTML = "Trời Tối";
+             
+         }
+         if(snap.val()>20 && snap.val()<500 ){
+          
+          document.images['thoitiet2'].src ='./khongnang.png' ;
+          document.getElementById("noidung").innerHTML = "Thời tiết: Không có nắng";
+         
+    
+      }     
+      if(snap.val()>500 && snap.val()<730){
+
+           
+          document.images['thoitiet2'].src ='./nangit.png' ;
+         document.getElementById("noidung").innerHTML = "Thời tiết: Ít nắng";
+    
+      }   
+      if(snap.val()>730){
+          
+          document.images['thoitiet2'].src ='./nang.png' ;
+          document.getElementById("noidung").innerHTML = "Thời tiết: Nắng tốt";
+         
+    
+      }     
+      if(snap.val()==3000){
+          
+          document.images['thoitiet2'].src ='./mua.png' ;
+          document.getElementById("noidung").innerHTML = "Thời tiết: mưa";
+         
+    
+      }     
+           
+
+   });
+  
+   var dulieu2=firebase.database();
+   var Laseron =document.getElementById("laseron");
+  //  var LaserofF = document.getElementById("laseroff");
+   var x=0;
+
+  Laseron.onclick =function(){
+   x++;
+   console.log(x);
+   if(x>1){
+    x=0;
+   }
+   if(x==0){
+    document.getElementById("laseron").innerHTML = "ĐANG BẬT";
+    dulieu2.ref().update({
+    "nutnhan":0
+   
+   });
+
+   }
+   if(x==1){
+    document.getElementById("laseron").innerHTML = "ĐANG TẮT";
+    dulieu2.ref().update({
+    "nutnhan":1
+   
+   });
+
+   }
+   }
+   
+  
+   var dulieu=firebase.database();
+   var Loaon =document.getElementById("loaon");
+   var y=0;
+  
+  Loaon.onclick =function(){
+    y++;
+    console.log(y);
+   if(y>1){
+    y=0;
+   }
+   if(y==1){
+    document.getElementById("loaon").innerHTML = "ĐANG BẬT";
+    dulieu.ref().update({
+    "loa":1
+   
+   });
+
+   }
+   if(y==0){
+    document.getElementById("loaon").innerHTML = "ĐANG TẮT";
+    dulieu.ref().update({
+    "loa":0
+   
+   });
+
+   }
+   }
+  
+
+  </script>
+
+  
+</html>
